@@ -12,6 +12,10 @@ align-items: center;
    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
 }
 
+.button {
+    text-align: center;
+}
+
 .number_output{
     font-size: 4rem;
     text-align: end;
@@ -57,6 +61,8 @@ align-items: center;
 .calculator_key--operator:active{
     background: hsl(177, 69%, 35%);
 }
+
+
 
 .calculator_key--enter{
     grid-column: 4 /5;

@@ -13,10 +13,10 @@
         <div class="number_output">0</div>
 
         <div class="number_input">
-            <button class="calculator_key calculator_key--operator">+</button>
-            <button class="calculator_key calculator_key--operator">-</button>
-            <button class="calculator_key calculator_key--operator">*</button>
-            <button class="calculator_key calculator_key--operator">/</button>
+            <button class="calculator_key calculator_key--operator" data-action="add">+</button>
+            <button class="calculator_key calculator_key--operator" data-action="subtract">-</button>
+            <button class="calculator_key calculator_key--operator" data-action="multiply">*</button>
+            <button class="calculator_key calculator_key--operator" data-action="divide">/</button>
 
             <button class="calculator_key">7</button>
             <button class="calculator_key">8</button>
@@ -28,13 +28,14 @@
             <button class="calculator_key">2</button>
             <button class="calculator_key">3</button>
             <button class="calculator_key">0</button>
-            <button class="calculator_key">.</button>
-            <button class="calculator_key">AC</button>
+            <button class="calculator_key" data-action="decimal">.</button>
+            <button class="calculator_key" data-action="clear">AC</button>
 
-            <button class="calculator_key calculator_key--enter">=</button>
+            <button class="calculator_key calculator_key--enter" data-action="calculate">=</button>
         </div>
 
     </div>
 </div>
+<script src="calculator.js"></script>
 </body>
 </html>
