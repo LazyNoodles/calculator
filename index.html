@@ -7,35 +7,33 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="box">
-    <div class="calculator_container">
+    <div class="calculator-container">
+        <div class="number-display-container">
+         <div class="number-display">0</div>
+        </div>
+        <div class="number-input-container">
+            <button class="input-button-operator">+</button>
+            <button class="input-button-operator" data-action="subtract">-</button>
+            <button class="input-button-operator" data-action="multiply">*</button>
+            <button class="input-button-operator" data-action="divide">/</button>
 
-        <div class="number_output">0</div>
+            <button class="input-button">7</button>
+            <button class="input-button">8</button>
+            <button class="input-button">9</button>
+            <button class="input-button">4</button>
+            <button class="input-button">5</button>
+            <button class="input-button">6</button>
+            <button class="input-button">1</button>
+            <button class="input-button">2</button>
+            <button class="input-button">3</button>
+            <button class="input-button">0</button>
+            <button class="input-button">.</button>
+            <button class="input-button" id="clear">AC</button>
 
-        <div class="number_input">
-            <button class="calculator_key calculator_key--operator" data-action="add">+</button>
-            <button class="calculator_key calculator_key--operator" data-action="subtract">-</button>
-            <button class="calculator_key calculator_key--operator" data-action="multiply">*</button>
-            <button class="calculator_key calculator_key--operator" data-action="divide">/</button>
-
-            <button class="calculator_key">7</button>
-            <button class="calculator_key">8</button>
-            <button class="calculator_key">9</button>
-            <button class="calculator_key">4</button>
-            <button class="calculator_key">5</button>
-            <button class="calculator_key">6</button>
-            <button class="calculator_key">1</button>
-            <button class="calculator_key">2</button>
-            <button class="calculator_key">3</button>
-            <button class="calculator_key">0</button>
-            <button class="calculator_key" data-action="decimal">.</button>
-            <button class="calculator_key" data-action="clear">AC</button>
-
-            <button class="calculator_key calculator_key--enter" data-action="calculate">=</button>
+            <button class="input-button-operator" id="equal">=</button>
         </div>
 
     </div>
-</div>
 <script src="calculator.js"></script>
 </body>
 </html>

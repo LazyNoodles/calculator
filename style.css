@@ -1,72 +1,56 @@
 body {
-height: 10rem;
-display: grid;
-justify-content: center;
-align-items: center;
-}
-
-.calculator_container {
-   max-inline-size: 22rem;
-   border-radius: 10px;
-   overflow: hidden;
-   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-}
-
-.button {
+    min-height: 100vh;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.number_output{
-    font-size: 4rem;
-    text-align: end;
-    background: white;
-    padding-block-start: 2rem;
-    padding-block-end: 0.25rem;
-    padding-inline-end: 1rem;
+.calculator-container {
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.number_input{
-    padding: 0.5rem;
+.number-display-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+    height: 80px;
+}
+
+.number-input-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
-    background-color: white;
+    gap: 10px;
+    padding: 20px;
 }
 
-.calculator_key{
-    inline-size: 60px;
-    block-size: 60px;
-    border-radius: 40px;
-    font-size: 2rem;
-    padding-block-start: 1rem;
-    padding-block-end: 1rem;
-    padding-inline-start: 1.25rem;
-    padding-inline-end: 1.25rem;
-    margin: 0.25rem;
-    border: none;
-    background-color: hsl(210, 25%, 95%);
+.input-button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
     
 }
 
-.calculator_key:active,
-.calculator_key:focus {
-    outline: none;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+.input-button:hover {
+    background-color: #e0e0e0;
 }
 
-.calculator_key--operator{
-    background: lightseagreen;
+.input-button-operator {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
 }
 
-.calculator_key--operator:active{
-    background: hsl(177, 69%, 35%);
+.input-button-operator:hover {
+    background-color: #ff8c00;
 }
 
-
-
-.calculator_key--enter{
-    grid-column: 4 /5;
-    grid-row: 2/ span 4;
-    background: lightseagreen;
-    height: auto;
+#equal {
+    grid-column: span 4;
 }
