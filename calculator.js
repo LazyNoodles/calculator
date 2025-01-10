@@ -8,13 +8,13 @@ const calculate = (n1, operator, n2) => {
     if (operator === 'add'){
         result = parseFloat (n1) + parseFloat (n2)
     }
-    if (operator === 'subtract'){
+    else if (operator === 'subtract'){
         result = parseFloat (n1) - parseFloat (n2)
     }
-    if (operator === 'multiply'){
+    else if (operator === 'multiply'){
         result = parseFloat (n1) * parseFloat (n2)
     }
-    if (operator === 'divide'){
+    else if (operator === 'divide'){
         result = parseFloat (n1) / parseFloat (n2)
     }
     return result
@@ -37,7 +37,7 @@ keys.addEventListener('click', e => {
             } else {
                 display.textContent = displayedNum + keyContent
             }
-            calculator.dataset.previousKey = 'number'
+            calculator.dataset.previousKeyType = 'number'
         }
 
 
@@ -47,7 +47,7 @@ keys.addEventListener('click', e => {
             } else if (previousKeyType === 'operator'){
                 display.textContent = '0.'
             }
-            calculator.dataset.previousKey = 'decimal'
+            calculator.dataset.previousKeyType = 'decimal'
         }
 
         if (action === 'clear'){
